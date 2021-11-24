@@ -1,0 +1,62 @@
+.section__main--feedbacks {
+   padding-top: 44px;
+
+   .splide__arrows {
+      top: -86px;
+   }
+}
+
+.feedbacks__card {
+   padding: 30px 32px 19px 34px;
+   border: 1px solid #5D8E88;
+   border-radius: 20px;
+}
+
+.feedbacks__card__header {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.feedbacks__card__avatar {
+   width: 70px;
+   height: 70px;
+   margin-right: 23px;
+}
+
+.feedbacks__card__student {
+   h3 {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 170%;
+   }
+
+   p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 170%;
+      color: rgba(48, 72, 69, 0.5);
+   }
+}
+
+.feedbacks__card__body {
+   padding-top: 30px;
+
+   p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 170%;
+      color: #000000;
+   }
+}
+
+.feedbacks__card__footer {
+   padding-top: 24px;
+   text-align: right;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 170%;
+}

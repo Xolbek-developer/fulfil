@@ -1,0 +1,68 @@
+.enroll-modal, .success-modal {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 4;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: start;
+   -ms-flex-align: start;
+   align-items: flex-start;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   padding: 40px 10px;
+   background-color: rgba(0, 0, 0, 0.2);
+   overflow: auto;
+}
+
+.enroll-modal__content {
+   width: 643px;
+   max-width: 100%;
+   height: auto;
+   padding: 70px 80px 110px;
+   background-color: #F7FDFD;
+   border-radius: 20px;
+}
+
+.enroll-modal__close {
+   margin-bottom: 40px;
+   text-align: right;
+
+   img {
+      width: 30px;
+      cursor: pointer;
+   }
+}
+
+.enroll-modal__heading {
+   margin-bottom: 40px;
+   text-align: center;
+   font-weight: 500;
+   font-size: 39px;
+   line-height: 210%;
+}
+
+.success-modal__content {
+   width: 775px;
+   max-width: 100%;
+   height: auto;
+   padding: 117px 148px 113px;
+   background-color: #F7FDFD;
+   border-radius: 20px;
+   text-align: center;
+}
+
+.success-modal__img {
+   margin-bottom: 50px;
+}
+
+.success-modal__text {
+   margin-bottom: 39px;
+   font-weight: 500;
+   font-size: 25px;
+   line-height: 170%;
+}

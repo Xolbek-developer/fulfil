@@ -1,0 +1,206 @@
+<%- include('../includes/head') %>
+
+<div class="wrapper">
+  <%- include('../includes/sidebar') %>
+  <div class="main-panel">
+    <%- include('../includes/navbar') %>
+    <div class="content">
+      <div class="row">
+        <% if(editing){ %>
+        <div class="col-lg-12 col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">Edit Header</h4>
+            </div>
+            <div class="card-body">
+              <div class="form">
+                <form action="/admin/edit-header" method="POST">
+                  <div class="label" id="label">
+                    <label for="students">Students</label>
+                    <input
+                      type="text"
+                      name="students"
+                      value="<%= header_data.students %>"
+                      required
+                    />
+                  </div>
+                  <div class="label" id="label">
+                    <label for="lessons">Lessons</label>
+                    <input
+                      type="text"
+                      name="lessons"
+                      value="<%= header_data.lessons %>"
+                      required
+                    />
+                  </div>
+                  <div class="label" id="label">
+                    <label for="teachers">Teachers</label>
+                    <input
+                      type="text"
+                      name="teachers"
+                      value="<%= header_data.teachers %>"
+                      required
+                    />
+                  </div>
+                  <div class="label" id="label">
+                    <label for="groups">Groups</label>
+                    <input
+                      type="text"
+                      name="groups"
+                      value="<%= header_data.groups %>"
+                      required
+                    />
+                  </div>
+                  <div class="label" id="label">
+                    <label for="content">Content</label>
+                    <textarea type="text" name="content" required>
+<%= header_data.content %></textarea
+                    >
+                  </div>
+
+                  <input
+                    type="hidden"
+                    value="<%= header_data._id %>"
+                    name="headerId"
+                  />
+                  <button type="submit">Update Statistic</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% } %>
+
+        <div class="col-lg-3">
+          <div class="card card-chart">
+            <div class="card-header">
+              <h5 class="card-category"></h5>
+              <h3 class="card-title">
+                <i class="tim-icons icon-chart-bar-32 text-primary"></i>
+                Students
+              </h3>
+            </div>
+            <div class="card-body">
+              <div
+                class="
+                  chart-area
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h1 class="display-1"><%= header_data.students %></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card card-chart">
+            <div class="card-header">
+              <h5 class="card-category"></h5>
+              <h3 class="card-title">
+                <i class="tim-icons icon-chart-bar-32 text-primary"></i>
+                Lessons
+              </h3>
+            </div>
+            <div class="card-body">
+              <div
+                class="
+                  chart-area
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h1 class="display-1"><%= header_data.lessons %></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card card-chart">
+            <div class="card-header">
+              <h5 class="card-category"></h5>
+              <h3 class="card-title">
+                <i class="tim-icons icon-chart-bar-32 text-primary"></i>
+                Teachers
+              </h3>
+            </div>
+            <div class="card-body">
+              <div
+                class="
+                  chart-area
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h1 class="display-1"><%= header_data.teachers %></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card card-chart">
+            <div class="card-header">
+              <h5 class="card-category"></h5>
+              <h3 class="card-title">
+                <i class="tim-icons icon-chart-bar-32 text-primary"></i>
+                Groups
+              </h3>
+            </div>
+            <div class="card-body">
+              <div
+                class="
+                  chart-area
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h1 class="display-1"><%= header_data.groups %></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="card card-chart">
+            <div class="card-header">
+              <h5 class="card-category"></h5>
+              <h3 class="card-title">
+                <i class="tim-icons text-primary"></i>
+                Content
+              </h3>
+            </div>
+            <div class="card-body">
+              <div
+                class="
+                  chart-area
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h1 class="display-2"><%= header_data.content %></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <% if(!editing){ %>
+          <a
+            style="color: rgb(214, 80, 214)"
+            class="btn"
+            href="/admin/edit-header/<%= header_data._id %>?edit=true"
+            ><i class="tim-icons icon-pencil text-info"> </i> Edit Headers</a
+          >
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('../includes/fixed_plugin') %> <%- include('../includes/end') %>

@@ -1,0 +1,36 @@
+.section__main--why-us {
+   display: -ms-grid;
+   display: grid;
+   -ms-grid-columns: (1fr)[4];
+   grid-template-columns: repeat(4, 1fr);
+   padding-top: 51px;
+}
+
+.why-us__card:not(:last-child) {
+   border-right: 2px solid rgba(176, 215, 192, 0.5);
+}
+
+.why-us__card__header {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   height: 260px;
+}
+
+.why-us__card__text {
+   text-align: center;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 170%;
+   color: rgba(0, 0, 0, 0.9);
+
+   strong {
+      font-weight: 500;
+   }
+}

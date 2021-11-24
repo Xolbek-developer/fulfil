@@ -1,0 +1,331 @@
+@import "mixins";
+
+@include media(1170px) {
+   .header__inner {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding-top: 17px;
+      padding-bottom: 19px;
+   }
+
+   .logo, .footer__logo {
+      width: 60px;
+   }
+
+   .nav {
+      position: fixed;
+      display: block;
+      width: 240px;
+      max-height: 100%;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      background-color: #ffffff;
+      border-radius: 0 0 0 20px;
+      padding: 30px;
+      overflow: auto;
+      -webkit-transition: 0.5s all ease-out;
+      -o-transition: 0.5s all ease-out;
+      transition: 0.5s all ease-out;
+   }
+
+   .nav-close {
+      right: -105%;
+      opacity: 0;
+   }
+
+   .nav__ul {
+      display: block;
+   }
+
+   .nav__li {
+      margin-bottom: 20px;
+   }
+
+   .nav__link {
+      font-size: 14px;
+      line-height: 193%;
+      color: rgba(39, 59, 57, 0.8);
+   }
+
+   .nav__phone {
+      padding-top: 25px;
+
+      svg {
+         width: 16px;
+      }
+
+      span {
+         font-size: 16px;
+         line-height: 193%;
+      }
+   }
+
+   .hamburger {
+      display: block;
+   }
+
+   .intro {
+      padding-top: 65px;
+   }
+
+   .intro__img {
+      display: block;
+      width: 314px;
+      margin: 0 auto;
+      -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+      order: -1;
+   }
+
+   .intro__motto {
+      width: 100%;
+      padding-top: 55px;
+      text-align: center;
+   }
+
+   .intro__heading {
+      margin-bottom: 46px;
+
+      strong {
+         font-size: 39px;
+         line-height: 100%;
+      }
+
+      span {
+         font-size: 20px;
+         line-height: 100%;
+      }
+   }
+
+   .button {
+      height: 57px;
+      padding: 15px 35px;
+      font-size: 14px;
+      line-height: 193%;
+   }
+
+   .statistics {
+      width: 688px;
+      -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      margin: 0 auto;
+      padding-top: 50px;
+   }
+
+   .statistics__value {
+      padding-top: 24px;
+   }
+
+   .statistics__description {
+      font-size: 14px;
+   }
+
+   .section {
+      padding-top: 100px;
+   }
+
+   .section__heading {
+      font-size: 25px;
+      line-height: 170%;
+   }
+
+   .section__main--why-us,
+   .section__main--courses,
+   .section__main--teachers,
+   .section__main--feedbacks {
+      padding-top: 35px;
+   }
+
+   .why-us__card__header {
+      height: 140px;
+
+      img {
+         height: 85%;
+      }
+   }
+
+   .why-us__card__text {
+      padding-top: 25px;
+      font-size: 16px;
+      line-height: 170%;
+   }
+
+   .section__main--courses {
+      padding-top: 35px;
+   }
+
+   .courses__card__body {
+      padding: 0 27px 37px;
+   }
+
+   .courses__card__heading {
+      font-size: 20px;
+   }
+
+   .courses__card__text {
+      font-size: 14px;
+   }
+
+   .courses__card__enroll {
+      span {
+         padding-bottom: 6px;
+         font-size: 14px;
+      }
+   }
+
+   .teachers__card__body {
+      padding: 42px 28px 20px;
+   }
+
+   .teachers__card__heading {
+      margin-bottom: 13px;
+      font-size: 20px;
+   }
+
+   .teachers__card__text {
+      font-size: 14px;
+   }
+
+   .feedbacks__card {
+      padding: 25px 25px 30px;
+   }
+   .feedbacks__card__avatar {
+      width: 54px;
+      height: 54px;
+      margin-right: 17px;
+   }
+
+   .feedbacks__card__student {
+      h3 {
+         font-size: 20px;
+      }
+
+      p {
+         font-size: 14px;
+      }
+   }
+
+   .feedbacks__card__body {
+      font-size: 14px;
+   }
+
+   .feedbacks__card__footer {
+      padding-top: 20px;
+      font-size: 14px;
+   }
+
+   .contact__img {
+      display: none;
+   }
+
+   .contact__right {
+      width: 100%;
+   }
+
+   .contact__form {
+      padding-top: 35px;
+      text-align: left;
+   }
+
+   .input {
+      margin-bottom: 25px;
+      padding-left: 18px;
+      padding-right: 18px;
+      font-size: 14px;
+   }
+
+   .footer__inner {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      padding-top: 30px;
+   }
+
+   .footer__text {
+      width: 100%;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      padding-top: 20px;
+      text-align: right;
+   }
+
+   .footer__phone {
+      margin-bottom: 10px;
+   }
+
+   .enroll-modal__content {
+      width: 500px;
+      padding: 30px;
+   }
+
+   .enroll-modal__close {
+      margin-bottom: 25px;
+
+      img {
+         width: 20px;
+         height: 20px;
+      }
+   }
+
+   .enroll-modal__heading {
+      margin-bottom: 25px;
+      font-size: 25px;
+   }
+
+   .success-modal__content {
+      width: 500px;
+      padding: 30px;
+   }
+
+   .success-modal__img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 30px;
+   }
+
+   .success-modal__text {
+      font-size: 20px;
+      margin-bottom: 20px;
+   }
+}
+
+@include media(950px) {
+   .section__main--why-us {
+      -ms-grid-columns: 1fr 50px 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 30px;
+      grid-column-gap: 30px;
+   }
+
+   .why-us__card:not(:last-child) {
+      border: none;
+   }
+}
+
+@include media(720px) {
+   .statistics {
+      width: 334px;
+      -ms-grid-columns: 1fr 20px 1fr;
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@include media(600px) {
+   .partners__card {
+      border-left: none;
+      border-right: none;
+   }
+}
+
+@include media(370px) {
+   .statistics {
+      width: 100%;
+   }
+}

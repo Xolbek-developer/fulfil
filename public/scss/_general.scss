@@ -1,0 +1,157 @@
+html {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+   -webkit-box-sizing: inherit;
+   box-sizing: inherit;
+}
+
+body {
+   font-family: "Poppins", Arial, sans-serif;
+   line-height: 1;
+   color: #273b39;
+   overflow-x: hidden;
+}
+
+h1, h2, h3, p, ul {
+   margin: 0;
+}
+
+ul {
+   padding: 0;
+   list-style-type: none;
+}
+
+a {
+   display: inline-block;
+   text-decoration: none;
+   color: inherit;
+}
+
+button {
+   border: none;
+
+   &:focus {
+      outline: none;
+   }
+}
+
+.outer-container {
+   max-width: 1600px;
+   margin: 0 auto;
+}
+
+.container, .flex-container {
+   max-width: 1220px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+.flex-container {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+}
+
+.button {
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   padding: 15px 35px;
+   height: 61px;
+   background: #FFD372;
+   border-radius: 10px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 193%;
+   -webkit-transition: 0.2s all ease-in;
+   -o-transition: 0.2s all ease-in;
+   transition: 0.2s all ease-in;
+   cursor: pointer;
+
+   &:hover {
+      background-color: darken(#ffd372, 10);
+   }
+}
+
+.section {
+   padding-top: 130px;
+}
+
+.section__heading {
+   font-weight: 500;
+   font-size: 39px;
+   line-height: 210%;
+}
+
+.splide__arrows {
+   position: absolute;
+   right: 0;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: reverse;
+   -ms-flex-direction: row-reverse;
+   flex-direction: row-reverse;
+   width: 120px;
+}
+
+.splide__arrow {
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   background-position: center;
+   background-size: 12px 18px;
+   background-repeat: no-repeat;
+   background-color: #F7FDFD;
+
+   &:hover {
+      background-color: #FFD372;
+   }
+
+   &--prev {
+      left: 0;
+      background-image: url("/img/icons/prev.svg");
+   }
+
+   &--next {
+      right: 0;
+      background-image: url("/img/icons/next.svg");
+   }
+
+   svg {
+      display: none;
+   }
+}
+
+.dark-layer {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 2;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.d-none {
+   display: none !important;
+}

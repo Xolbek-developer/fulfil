@@ -1,0 +1,44 @@
+.section__main--teachers {
+   padding-top: 50px;
+
+   .splide__arrows {
+      top: -90px;
+   }
+}
+
+.teachers__card {
+   padding-top: 20px;
+   background: #F7FDFD;
+   border-radius: 20px;
+}
+
+.teachers__card__header {
+   width: 218px;
+   height: 218px;
+   margin: 0 auto;
+   border-radius: 50%;
+   overflow: hidden;
+
+   img {
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+   }
+}
+
+.teachers__card__body {
+   padding: 32px 29.5px 36px;
+}
+
+.teachers__card__heading {
+   margin-bottom: 18px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 170%;
+}
+
+.teachers__card__text {
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 170%;
+}
