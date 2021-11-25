@@ -18,4 +18,13 @@
    height: 200px;
    border-left: 1px solid rgba(176, 215, 192, 0.5);
    border-right: 1px solid rgba(176, 215, 192, 0.5);
+
+   &:hover .partners__logo {
+      opacity: 1;
+   }
+}
+
+.partners__logo {
+   opacity: 0.3;
+   transition: 0.2s all ease;
 }

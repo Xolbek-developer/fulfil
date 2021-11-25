@@ -25,7 +25,7 @@
           </li>
         </ul>
 
-        <a class="nav__phone" href="tel: +998993421009">
+        <a class="nav__phone" href="tel:+998993421009">
           <svg
             width="18"
             height="18"
@@ -125,7 +125,7 @@
 <!--SECTION WHY-US-->
 <section class="section why-us">
   <div class="container" id="why-us">
-    <header class="section__header section__header--why-us">
+    <div class="section__header section__header--why-us">
       <h2
         class="section__heading"
         data-aos="fade-left"
@@ -134,8 +134,8 @@
       >
         Nega aynan biz?
       </h2>
-    </header>
-    <main
+    </div>
+    <div
       class="section__main section__main--why-us"
       data-aos="fade-right"
       data-aos-duration="1000"
@@ -177,14 +177,14 @@
           <strong>Yuqori natija</strong>
         </p>
       </div>
-    </main>
+    </div>
   </div>
 </section>
 
 <!--SECTION WHY-US-->
 <section class="section courses">
   <div class="container" id="courses">
-    <header class="section__header section__header--courses">
+    <div class="section__header section__header--courses">
       <h2
         class="section__heading"
         data-aos="fade-left"
@@ -193,8 +193,8 @@
       >
         Kurslarimiz
       </h2>
-    </header>
-    <main
+    </div>
+    <div
       class="section__main section__main--courses"
       data-aos="fade-right"
       data-aos-duration="1000"
@@ -228,14 +228,14 @@
           </ul>
         </div>
       </div>
-    </main>
+    </div>
   </div>
 </section>
 
 <!--SECTION TEACHERS-->
 <section class="section teachers">
   <div class="container" id="mentors">
-    <header class="section__header section__header--teachers">
+    <div class="section__header section__header--teachers">
       <h2
         class="section__heading"
         data-aos="fade-left"
@@ -244,8 +244,8 @@
       >
         O'qituvchilar
       </h2>
-    </header>
-    <main
+    </div>
+    <div
       class="section__main section__main--teachers"
       data-aos="fade-right"
       data-aos-duration="1000"
@@ -272,14 +272,14 @@
           </ul>
         </div>
       </div>
-    </main>
+    </div>
   </div>
 </section>
 
 <!--SECTION FEEDBACKS-->
 <section class="section feedbacks">
   <div class="container" id="feedback">
-    <header class="section__header section__header--feedbacks">
+    <div class="section__header section__header--feedbacks">
       <h2
         class="section__heading"
         data-aos="fade-left"
@@ -288,8 +288,8 @@
       >
         O'quvchilarimiz fikri
       </h2>
-    </header>
-    <main
+    </div>
+    <div
       class="section__main section__main--feedbacks"
       data-aos="fade-right"
       data-aos-duration="1000"
@@ -298,9 +298,7 @@
       <div class="splide feedbacks__slider">
         <div class="splide__track">
           <ul class="splide__list">
-            <% if(feedbacks.length > 0){ %> 
-            <% for(let feedback of feedbacks){
-            %>
+            <% if(feedbacks.length > 0){ %> <% for(let feedback of feedbacks){ %>
             <li class="splide__slide">
               <div class="feedbacks__card">
                 <div class="feedbacks__card__header">
@@ -318,18 +316,19 @@
                   <p><%= feedback.description %></p>
                 </div>
                 <div class="feedbacks__card__footer">
-                  <%= `${new Date(feedback.date).getDate()}.${new Date(feedback.date).getMonth()+1}.${new Date(feedback.date).getFullYear()}` %>
+                  <%= `${new Date(feedback.date).getDate()}.${new
+                  Date(feedback.date).getMonth()+1}.${new
+                  Date(feedback.date).getFullYear()}` %>
                 </div>
               </div>
             </li>
-            <% } %> 
-            <% } else { %>
+            <% } %> <% } else { %>
             <h1>Feedbacks Not Found!</h1>
             <% } %>
           </ul>
         </div>
       </div>
-    </main>
+    </div>
   </div>
 </section>
 
@@ -384,6 +383,7 @@
 <!--SECTION PARTNERS-->
 <section class="section partners">
   <div class="container">
+    <h2 class="d-none">Partners</h2>
     <div
       class="splide partners__slider"
       data-aos="fade-up"
@@ -399,7 +399,7 @@
               href="<%= partner.link %>"
               target="_blank"
             >
-              <img src="/<%= partner.logo %>" alt="" />
+              <img class="partners__logo" src="/<%= partner.logo %>" alt="" />
             </a>
           </li>
           <% } %> <% }else{ %>
@@ -420,7 +420,7 @@
         Copyright © FulFil education 2021. All Rights Reserved.
       </p>
       <div class="footer__contact">
-        <a class="footer__phone" href="tel: +998993421009">
+        <a class="footer__phone" href="tel:+998993421009">
           <svg
             width="18"
             height="18"
