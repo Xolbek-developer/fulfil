@@ -4,6 +4,7 @@ const nodemailer = require("nodemailer");
 const { validationResult } = require("express-validator/check");
 
 const Admin = require("../models/admin");
+require("dotenv").config();
 
 const GMAIL = process.env.GMAIL;
 const GMAIL_PASSWORD = process.env.GMAIL_PASSWORD;

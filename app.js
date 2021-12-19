@@ -8,6 +8,7 @@ const flash = require("connect-flash");
 const multer = require("multer");
 const compression = require("compression");
 const helmet = require("helmet");
+require("dotenv").config();
 
 const app = express();
 

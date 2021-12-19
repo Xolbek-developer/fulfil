@@ -1,7 +1,0 @@
-{
-  "env": {
-    "MONGO_URL": "mongodb+srv://xolbek:xolbek@cluster0.7hzxz.mongodb.net/fulfil",
-    "GMAIL": "test@test.com",
-    "GMAIL_PASSWORD": "test"
-  }
-}
