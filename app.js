@@ -6,7 +6,8 @@ const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
 const flash = require("connect-flash");
 const multer = require("multer");
-const dotenv = require("dotenv");
+const compression = require("compression");
+const helmet = require("helmet");
 
 const app = express();
 dotenv.config();
@@ -15,6 +16,9 @@ const contentRoute = require("./routes/content");
 const adminRoute = require("./routes/admin");
 const authRoute = require("./routes/auth");
 const errorController = require("./controllers/error");
+
+app.use(compression());
+app.use(helmet());
 
 const MONGODB_URI = process.env.MONGO_URL;
 const PORT = process.env.PORT;

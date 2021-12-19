@@ -1,11 +1,9 @@
 const bcrypt = require("bcryptjs");
 const crypto = require("crypto");
 const nodemailer = require("nodemailer");
-const dotenv = require("dotenv");
 const { validationResult } = require("express-validator/check");
 
 const Admin = require("../models/admin");
-dotenv.config();
 
 const GMAIL = process.env.GMAIL;
 const GMAIL_PASSWORD = process.env.GMAIL_PASSWORD;
