@@ -84,9 +84,12 @@ button {
    }
 }
 
+section {
+   overflow: hidden;
+}
+
 .section {
    padding-top: 130px;
-   overflow-x: hidden;
 }
 
 .section__heading {
