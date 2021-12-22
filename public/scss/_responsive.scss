@@ -322,6 +322,15 @@
       border-left: none;
       border-right: none;
    }
+
+   .feedbacks__card__header {
+      align-items: flex-start;
+   }
+
+   .feedbacks__card__header h3 {
+      margin-bottom: 5px;
+      line-height: 1;
+   }
 }
 
 @include media(370px) {
