@@ -7,6 +7,9 @@
 }
 
 .feedbacks__card {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
    padding: 30px 32px 19px 34px;
    border: 1px solid #5D8E88;
    border-radius: 20px;
@@ -43,6 +46,7 @@
 }
 
 .feedbacks__card__body {
+   flex-grow: 1;
    padding-top: 30px;
 
    p {
@@ -54,6 +58,7 @@
 }
 
 .feedbacks__card__footer {
+   margin-top: auto;
    padding-top: 24px;
    text-align: right;
    font-weight: 500;
